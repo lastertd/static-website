@@ -1,5 +1,6 @@
 module.exports = {
     base: '/',
+    dest: './dist',
     theme: 'reco',
     themeConfig: {
         lastUpdated: '最后更新于',
