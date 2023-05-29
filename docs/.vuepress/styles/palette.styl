@@ -1,0 +1,124 @@
+// color
+$color-normal = #eeeff1;
+$color-main = #db5b6c;
+$color-info = #1ba784;
+$color-warn = #E6A23C;
+$color-error = #e1122a;
+$color-black1 = #747d8c;
+$color-black2 = #2f3542;
+$color-white1 = #7ba2a1;
+$color-white2 = #a4faf6;
+$color-white3 = #f5f8f8;
+$color-blue = #70a1ff;
+$color-gray = #ced6e0;
+
+
+#app {
+  max-width 1500px;
+  margin 0 auto;
+}
+
+.navbar {
+  max-width 1500px;
+  margin 0 auto;
+  padding-left 5rem;
+  padding-right 5rem;
+  display flex;
+  flex-flow row nowrap;
+  align-items center;
+  justify-content space-between;
+
+  .links {
+    position: static;
+  }
+
+  .site-name.can-hide {
+    color $color-main
+    font-size 25px
+  }
+
+}
+
+.sidebar {
+  padding-left: 5rem;
+  background transparent;
+  border-right none
+
+  & .active {
+    color $color-main!important;
+    border-left-color $color-main!important
+  }
+}
+
+
+.page {
+  padding-left 0!important
+  padding-right 0!important
+  margin-top 70px
+
+
+  .theme-default-content {
+    max-width 800px
+
+    margin 0 auto!important
+    .demo-block{
+      margin-bottom 60px
+    }
+    h1,h2,h3,h4{
+      padding-top 0
+      margin-top 60px
+    }
+
+    & > p, li {
+      code {
+        color $color-main;
+      }
+    }
+
+    & > blockquote {
+      color: $color-black1;
+
+      & strong {
+        color: $color-black2;
+      }
+    }
+
+    & > table {
+      width 100%;
+      table-layout fixed
+      text-align center
+
+
+      & td, th {
+        width: 1%
+        //border-right none
+        //border-left none
+      }
+    }
+
+    & > h1, h2 {
+      a{
+        opacity:0
+      }
+      position relative;
+
+      &:hover:before {
+        content "⚓"
+        position absolute
+        right 100%
+      }
+    }
+  }
+}
+
+.global-ui {
+  .ra-wrapper {
+    right 5rem !important;
+
+    .active {
+      color #e0707f;
+    }
+
+  }
+}
+
