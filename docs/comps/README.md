@@ -1,5 +1,6 @@
 ---
 title: Guide 指南
+publish: false
 ---
 
 # 安装
