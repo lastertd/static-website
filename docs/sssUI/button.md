@@ -1,6 +1,7 @@
 ---
 title: Button 按钮
 publish: false
+autoGroup-1: base
 ---
 
 
@@ -16,32 +17,41 @@ publish: false
 ~~~vue
 
 <template>
-    <sss-row>
-        <sss-button>默认按钮</sss-button>
-        <sss-button type="main">主要按钮</sss-button>
-        <sss-button type="info">信息按钮</sss-button>
-        <sss-button type="warn">警告按钮</sss-button>
-        <sss-button type="error">错误按钮</sss-button>
-    </sss-row>
-    <sss-row>
-        <sss-button type="main" round>主要按钮</sss-button>
-        <sss-button type="info" round>信息按钮</sss-button>
-        <sss-button type="warn" round>警告按钮</sss-button>
-        <sss-button type="error" round>错误按钮</sss-button>
-    </sss-row>
-    <sss-row>
-        <sss-button type="main" empty>主要按钮</sss-button>
-        <sss-button type="info" empty>信息按钮</sss-button>
-        <sss-button type="warn" empty>警告按钮</sss-button>
-        <sss-button type="error" empty>错误按钮</sss-button>
-    </sss-row>
-    <sss-row>
-        <sss-button cricle left-icon="sss-editor"></sss-button>
-        <sss-button type="main" cricle left-icon="sss-home"></sss-button>
-        <sss-button type="info" cricle left-icon="sss-medal"></sss-button>
-        <sss-button type="warn" cricle left-icon="sss-option"></sss-button>
-        <sss-button type="error" cricle left-icon="sss-title"></sss-button>
-    </sss-row>
+        <sss-row>
+            <sss-button>默认按钮</sss-button>
+            <sss-button type="main">主要按钮</sss-button>
+            <sss-button type="info">信息按钮</sss-button>
+            <sss-button type="warn">警告按钮</sss-button>
+            <sss-button type="error">错误按钮</sss-button>
+            <sss-button type="cyan">紫罗兰</sss-button>
+        </sss-row>
+        <sss-row>
+            <sss-button round>默认按钮</sss-button>
+            <sss-button type="main" round>主要按钮</sss-button>
+            <sss-button type="info" round>信息按钮</sss-button>
+            <sss-button type="warn" round>警告按钮</sss-button>
+            <sss-button type="error" round>错误按钮</sss-button>
+            <sss-button type="cyan" round>紫罗兰</sss-button>
+
+        </sss-row>
+        <sss-row >
+            <sss-button empty>默认按钮</sss-button>
+            <sss-button type="main" empty>主要按钮</sss-button>
+            <sss-button type="info" empty>信息按钮</sss-button>
+            <sss-button type="warn" empty>警告按钮</sss-button>
+            <sss-button type="error" empty>错误按钮</sss-button>
+            <sss-button type="cyan" empty>紫罗兰</sss-button>
+
+        </sss-row>
+        <sss-row >
+            <sss-button cricle left-icon="sss-editor" size="m"></sss-button>
+            <sss-button type="main" cricle left-icon="sss-home" size="m"></sss-button>
+            <sss-button type="info" cricle left-icon="sss-medal" size="m"></sss-button>
+            <sss-button type="warn" cricle left-icon="sss-option" size="m"></sss-button>
+            <sss-button type="error" cricle left-icon="sss-title" size="m"></sss-button>
+            <sss-button type="cyan" cricle left-icon="sss-dongtai" size="m"></sss-button>
+        </sss-row>
+
 </template>
 ~~~
 
@@ -77,6 +87,7 @@ publish: false
         <sss-button type="error" loading>错误按钮</sss-button>
     </sss-row>
 
+
 </template>
 ~~~
 
@@ -86,16 +97,20 @@ publish: false
 
 `left-icon`指定左图标, `right-icon`指定右图标
 
+::: danger
+由于按钮并未设置高度, 单图标按钮会显得矮一些
+
+:::
+
 ::: demo
 
 ~~~html
 
 <template>
     <sss-row>
-        <sss-button type="main" left-icon="sss-home"></sss-button>
-        <sss-button type="main" left-icon="sss-home">主要按钮</sss-button>
-        <sss-button type="main" right-icon="sss-gerenzhongxin-zhihui">信息按钮</sss-button>
-        <sss-button type="main" left-icon="sss-home" right-icon="sss-gerenzhongxin-zhihui">警告按钮</sss-button>
+        <sss-button type="main" left-icon="sss-home">主页</sss-button>
+        <sss-button type="main" right-icon="sss-gerenzhongxin-zhihui">个人中心</sss-button>
+        <sss-button type="main" left-icon="sss-star-fill" right-icon="sss-star2">收藏</sss-button>
     </sss-row>
 </template>
 ~~~
@@ -112,10 +127,10 @@ publish: false
 
 <template>
     <sss-row>
-        <sss-button size="l" type="main">大型按钮</sss-button>
-        <sss-button size="m" type="main">中型按钮</sss-button>
-        <sss-button size="s" type="main">小型按钮</sss-button>
-        <sss-button type="main">默认大小</sss-button>
+        <sss-button size="l" >大型按钮</sss-button>
+        <sss-button size="m" >中型按钮</sss-button>
+        <sss-button size="s" >小型按钮</sss-button>
+        <sss-button >默认大小</sss-button>
     </sss-row>
 </template>
 ~~~

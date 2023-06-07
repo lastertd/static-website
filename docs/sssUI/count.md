@@ -1,6 +1,7 @@
 ---
 title: Count 计数器
 publish: false
+autoGroup-1: base
 ---
 
 
@@ -17,8 +18,9 @@ publish: false
 
 
 ## 基础用法
-计数器默认宽度为父元素100%
- ,可以直接输入想要的数字
+计数器最大宽度为300px
+
+可通过手动输入数字
 
 ::: demo
 

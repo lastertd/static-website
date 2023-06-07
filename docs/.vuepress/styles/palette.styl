@@ -109,10 +109,14 @@ $dis = 7rem;
 
 
 .page {
+
   position relative
   margin 0!important
 
   margin-top 70px
+  & .iconfont{
+    color inherit;
+  }
 
   & > section {
     //display flex;
@@ -212,3 +216,57 @@ $dis = 7rem;
     //color inherit!important;
   }
 
+._box {
+    width: 350px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+}
+
+._top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+._top > *,
+._bottom > * {
+    margin: 0 20px;
+}
+
+._bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+._left {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+}
+._right {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+._left > *,
+._right > * {
+    margin: 20px 0;
+}
+
+
+  .sss-popper{
+    & * {
+      font-size inherit!important
+    }
+  }

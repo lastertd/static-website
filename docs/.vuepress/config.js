@@ -3,31 +3,32 @@ module.exports = {
     dest: './dist',
     theme: 'reco',
     themeConfig: {
-        lastUpdated: '最后更新于',
-        logo: "/favicon.ico",
         nav: [
             {text: 'Home', link: '/', icon: 'reco-home'},
-            {text: 'Components', link: '/comps/', icon: 'iconfont sss-medal'},
+            {text: 'Components', link: '/sssUI/', icon: 'iconfont sss-medal'},
             {text: 'Demos', link: '/demos/', icon: 'iconfont sss-star-fill'},
             {text: 'TimeLine', link: '/timeline/', icon: 'reco-date'},
         ],
-        noFoundPageByTencent: false,
-        type:'blog',
-        authorAvatar: 'https://avatars.githubusercontent.com/u/84920591?v=4',
         blogConfig: {
             category: {
                 location: 4,
                 text: 'Blogs',
             },
-            tag:{
+            tag: {
                 location: 5,
-                text:'Tag',
+                text: 'Tag',
             },
             socialLinks: [     // 信息栏展示社交信息
                 {icon: 'reco-github', link: 'https://github.com/lastertd'},
                 {icon: 'reco-npm', link: 'https://www.npmjs.com/~laster'}
             ]
-        }
+        },
+        lastUpdated: '最后更新于',
+        logo: "/favicon.ico",
+        noFoundPageByTencent: false,
+        type: 'blog',
+        authorAvatar: 'https://avatars.githubusercontent.com/u/84920591?v=4',
+
     },
     title: 'LasterCN',
     description: '',
@@ -43,6 +44,7 @@ module.exports = {
         ["vuepress-plugin-auto-sidebar", {
             sidebarDepth: 0,
             ignore: [],
+
         }],
         ['vuepress-plugin-right-anchor', {
             ignore: [

@@ -1,6 +1,7 @@
 ---
 title: Textarea 文本框
 publish: false
+autoGroup-1: base
 ---
 
 # textarea 文本框

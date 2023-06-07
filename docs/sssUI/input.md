@@ -1,6 +1,7 @@
 ---
 title: Input 输入框
 publish: false
+autoGroup-1: base
 ---
 
 

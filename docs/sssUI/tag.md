@@ -1,6 +1,7 @@
 ---
 title: Tag 标签
 publish: false
+autoGroup-1: base
 ---
 
 

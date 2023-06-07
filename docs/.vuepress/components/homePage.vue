@@ -13,7 +13,7 @@ export default {
     name: "homePage",
     methods:{
         start(){
-           this.$router.push('/comps/')
+           this.$router.push('/sssUI/')
         }
     }
 }
