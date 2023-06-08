@@ -10,7 +10,6 @@ autoGroup-1: base
 与输入框类似
 :::
 
-
 ## 基础用法
 
 `textarea`默认宽度是父元素100%
@@ -22,28 +21,26 @@ autoGroup-1: base
 ~~~vue
 
 <template>
-    <sss-textarea 
-            v-model="str" 
-            placeholder="input something"
-            rows="5"
+    <sss-textarea
+        v-model="str"
+        placeholder="input something"
+        rows="5"
     >
-        
+
     </sss-textarea>
 </template>
 <script>
-    export default {
-        data() {
-            return {
-                str: ''
-            }
+export default {
+    data() {
+        return {
+            str: ''
         }
     }
+}
 </script>
 ~~~
 
 :::
-
-
 
 ## 禁用文本框
 
@@ -54,69 +51,62 @@ autoGroup-1: base
 ~~~vue
 
 <template>
-    <sss-textarea 
-            v-model="str" 
-            placeholder="input something"
-            rows="5"
-            disabled
+    <sss-textarea
+        v-model="str"
+        placeholder="input something"
+        rows="5"
+        disabled
     >
-        
+
     </sss-textarea>
 </template>
 <script>
-    export default {
-        data() {
-            return {
-                str: ''
-            }
+export default {
+    data() {
+        return {
+            str: ''
         }
     }
+}
 </script>
 ~~~
 
 :::
 
-
-
-
-
 ## 限制文本长度
+
 `minlength`设置最少文本长度
 
 `maxlength`设置最多文本长度
-
 
 ::: demo
 
 ~~~vue
 
 <template>
-    <sss-textarea 
-            v-model="str" 
-            placeholder="input something"
-            rows="5"
-            minlength="20"
-            maxlength="256"
-            show-word-limit
+    <sss-textarea
+        v-model="str"
+        placeholder="input something"
+        rows="5"
+        minlength="20"
+        maxlength="256"
+        show-word-limit
     >
-        
+
     </sss-textarea>
 </template>
 <script>
-    export default {
-        data() {
-            return {
-                str: ''
-            }
+export default {
+    data() {
+        return {
+            str: ''
         }
     }
+}
 </script>
 ~~~
 
 :::
-
-
-
 
 ## attributes
 
@@ -132,7 +122,6 @@ autoGroup-1: base
 | autofocus     | 自动获取焦点     | boolean         | ---             | false  |
 | type          | 输入框类型       | string          | text / password | text   |
 | id            | 输入框id         | string          | ---             | ---    |
-
 
 ## events
 

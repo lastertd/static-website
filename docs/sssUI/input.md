@@ -4,8 +4,6 @@ publish: false
 autoGroup-1: base
 ---
 
-
-
 # input 输入框
 
 显示输入字符
@@ -19,8 +17,6 @@ input默认具有**200ms**
 
 :::
 
-
-
 ## 基础用法
 
 `input`默认宽度是父元素100%
@@ -30,21 +26,21 @@ input默认具有**200ms**
 ~~~vue
 
 <template>
-    <sss-input 
-            v-model="str" 
-            placeholder="input something"
+    <sss-input
+        v-model="str"
+        placeholder="input something"
     >
-        
+
     </sss-input>
 </template>
 <script>
-    export default {
-        data() {
-            return {
-                str: ''
-            }
+export default {
+    data() {
+        return {
+            str: ''
         }
     }
+}
 </script>
 ~~~
 

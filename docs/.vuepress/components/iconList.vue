@@ -5,7 +5,7 @@
             <icon-item icon="sss-warn"></icon-item>
             <icon-item icon="sss-error"></icon-item>
             <icon-item icon="sss-success"></icon-item>
-            <icon-item icon="sss-gerenzhongxin-zhihui"></icon-item>
+            <icon-item icon="sss-user2"></icon-item>
             <icon-item icon="sss-close"></icon-item>
             <icon-item icon="sss-eye"></icon-item>
             <icon-item icon="sss-cricle-close"></icon-item>

@@ -14,7 +14,6 @@ autoSort: 99999
 
 :::
 
-
 基组件大致可以被分为两个部分 `reference` 和`popper`
 
 - reference: 存在于文档流(一般情况)中的任何元素，作为“触发器”使得popper元素显现。
@@ -22,6 +21,7 @@ autoSort: 99999
 - popper: 它将定位从文档流中“弹出”并漂浮在目标元素附近的任何 UI 元素。 最常见的示例是工具提示，但它也包括弹出窗口、下拉菜单等。 所有这些都可以概括地描述为“popper”元素。
 
 ## 基本用法
+
 ::: warning
 文本节点无法成为 `reference`元素
 如何是文本节点请至少加上一层span或者其他
@@ -161,14 +161,13 @@ export default {
 `append-to-body`默认是开启的, 这样做是为了更好的管理定位元素的层级关系。
 :::
 
-
 ::: demo
 
 ~~~vue
 
 <template>
     <sss-row justify="space-evenly">
-        <sss-popper trigger="clickToToggle" >
+        <sss-popper trigger="clickToToggle">
             <div slot="popper">
                 popper element
             </div>
@@ -188,8 +187,6 @@ export default {
 ~~~
 
 :::
-
-
 
 ## attributes
 

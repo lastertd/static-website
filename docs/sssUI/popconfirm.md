@@ -17,40 +17,38 @@ autoGroup-3: popper
 
 `type`指定确认框图标类型
 
-
-
 ::: demo
 
 ~~~vue
 
 <template>
-    <sss-popconfirm 
-        title="这是删除操作，确定要执行么？" 
+    <sss-popconfirm
+        title="这是删除操作，确定要执行么？"
         type="info"
         @cancel="handleCancel"
         @confirm="handleConfirm"
     >
-        <sss-button   empty>删除</sss-button>
+        <sss-button empty>删除</sss-button>
     </sss-popconfirm>
 
 </template>
 <script>
 export default {
-    methods:{
-        handleCancel(){
+    methods: {
+        handleCancel() {
             this.$notify({
-                title:'删除失败',
-                content:'用户取消了删除',
-                type:'error'
+                title: '删除失败',
+                content: '用户取消了删除',
+                type: 'error'
             })
         },
-        handleConfirm(){
+        handleConfirm() {
             this.$notify({
-                title:'删除成功',
-                content:'用户确认了删除',
-                type:'success',
+                title: '删除成功',
+                content: '用户确认了删除',
+                type: 'success',
             })
-            
+
         }
     }
 }

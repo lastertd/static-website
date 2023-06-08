@@ -4,11 +4,9 @@ publish: false
 autoGroup-1: base
 ---
 
-
 # button 按钮
 
 ## 基本用法
-
 
 通过 `type`指定类型、 `round`指定圆角、 `circle`指定圆形
 
@@ -17,40 +15,40 @@ autoGroup-1: base
 ~~~vue
 
 <template>
-        <sss-row>
-            <sss-button>默认按钮</sss-button>
-            <sss-button type="main">主要按钮</sss-button>
-            <sss-button type="info">信息按钮</sss-button>
-            <sss-button type="warn">警告按钮</sss-button>
-            <sss-button type="error">错误按钮</sss-button>
-            <sss-button type="cyan">紫罗兰</sss-button>
-        </sss-row>
-        <sss-row>
-            <sss-button round>默认按钮</sss-button>
-            <sss-button type="main" round>主要按钮</sss-button>
-            <sss-button type="info" round>信息按钮</sss-button>
-            <sss-button type="warn" round>警告按钮</sss-button>
-            <sss-button type="error" round>错误按钮</sss-button>
-            <sss-button type="cyan" round>紫罗兰</sss-button>
+    <sss-row>
+        <sss-button>默认按钮</sss-button>
+        <sss-button type="main">主要按钮</sss-button>
+        <sss-button type="info">信息按钮</sss-button>
+        <sss-button type="warn">警告按钮</sss-button>
+        <sss-button type="error">错误按钮</sss-button>
+        <sss-button type="cyan">紫罗兰</sss-button>
+    </sss-row>
+    <sss-row>
+        <sss-button round>默认按钮</sss-button>
+        <sss-button type="main" round>主要按钮</sss-button>
+        <sss-button type="info" round>信息按钮</sss-button>
+        <sss-button type="warn" round>警告按钮</sss-button>
+        <sss-button type="error" round>错误按钮</sss-button>
+        <sss-button type="cyan" round>紫罗兰</sss-button>
 
-        </sss-row>
-        <sss-row >
-            <sss-button empty>默认按钮</sss-button>
-            <sss-button type="main" empty>主要按钮</sss-button>
-            <sss-button type="info" empty>信息按钮</sss-button>
-            <sss-button type="warn" empty>警告按钮</sss-button>
-            <sss-button type="error" empty>错误按钮</sss-button>
-            <sss-button type="cyan" empty>紫罗兰</sss-button>
+    </sss-row>
+    <sss-row>
+        <sss-button empty>默认按钮</sss-button>
+        <sss-button type="main" empty>主要按钮</sss-button>
+        <sss-button type="info" empty>信息按钮</sss-button>
+        <sss-button type="warn" empty>警告按钮</sss-button>
+        <sss-button type="error" empty>错误按钮</sss-button>
+        <sss-button type="cyan" empty>紫罗兰</sss-button>
 
-        </sss-row>
-        <sss-row >
-            <sss-button cricle left-icon="sss-editor" size="m"></sss-button>
-            <sss-button type="main" cricle left-icon="sss-home" size="m"></sss-button>
-            <sss-button type="info" cricle left-icon="sss-medal" size="m"></sss-button>
-            <sss-button type="warn" cricle left-icon="sss-option" size="m"></sss-button>
-            <sss-button type="error" cricle left-icon="sss-title" size="m"></sss-button>
-            <sss-button type="cyan" cricle left-icon="sss-dongtai" size="m"></sss-button>
-        </sss-row>
+    </sss-row>
+    <sss-row>
+        <sss-button cricle left-icon="sss-editor" size="m"></sss-button>
+        <sss-button type="main" cricle left-icon="sss-home" size="m"></sss-button>
+        <sss-button type="info" cricle left-icon="sss-medal" size="m"></sss-button>
+        <sss-button type="warn" cricle left-icon="sss-option" size="m"></sss-button>
+        <sss-button type="error" cricle left-icon="sss-title" size="m"></sss-button>
+        <sss-button type="cyan" cricle left-icon="sss-dongtai" size="m"></sss-button>
+    </sss-row>
 
 </template>
 ~~~
@@ -127,10 +125,10 @@ autoGroup-1: base
 
 <template>
     <sss-row>
-        <sss-button size="l" >大型按钮</sss-button>
-        <sss-button size="m" >中型按钮</sss-button>
-        <sss-button size="s" >小型按钮</sss-button>
-        <sss-button >默认大小</sss-button>
+        <sss-button size="l">大型按钮</sss-button>
+        <sss-button size="m">中型按钮</sss-button>
+        <sss-button size="s">小型按钮</sss-button>
+        <sss-button>默认大小</sss-button>
     </sss-row>
 </template>
 ~~~

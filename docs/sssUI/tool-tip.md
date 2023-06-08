@@ -5,6 +5,7 @@ autoGroup-3: popper
 ---
 
 # tool tip 提示框
+
 ::: tip
 提示框组件完全继承自popper基组件
 
@@ -91,9 +92,9 @@ autoGroup-3: popper
 ~~~vue
 
 <template>
-    <sss-row justify="space-evenly"> 
+    <sss-row justify="space-evenly">
         <sss-tool-tip title="暗色 too tip" dark>
-           <span>dark</span>
+            <span>dark</span>
         </sss-tool-tip>
 
         <div style="width: 25px"></div>
@@ -109,6 +110,7 @@ autoGroup-3: popper
 :::
 
 ## attributes
+
 | 参数名 | 描述               | 类型   | 可选值 | 默认值 |
 | ------ | ------------------ | ------ | ------ | ------ |
 | title  | popper元素文本内容 | string | ---    | ---    |

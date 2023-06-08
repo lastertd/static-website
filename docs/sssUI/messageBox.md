@@ -195,15 +195,23 @@ export default {
         ref="test"
         show-mark
         forbidden-scroll
-        :before-close="(next) => {
-                next();
-            }"
+        :before-close="func"
     >
-
+        <span slot="content">消息体</span>
     </sss-message-box>
 </template>
 <script>
-export default {}
+export default {
+    methods: {
+        func(next) {
+            this.$confirm({
+                title: '确定不是误触么？',
+                type: 'info'
+            }).then(() => next()).catch(() => {
+            })
+        }
+    }
+}
 </script>
 
 ~~~
