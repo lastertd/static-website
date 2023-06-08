@@ -1,5 +1,5 @@
 <template>
-    <div class="container" @click="handleClick()">
+    <div class="item-container" @click="handleClick()">
         <div class="iconfont" :class="icon"></div>
         <div class="content"> {{ icon }}</div>
 
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-.container {
+.item-container {
     margin-bottom: 20px;
     width: 150px;
     height: 100px;
